@@ -34,7 +34,7 @@ class FrameSnap(private val videoFileName: String, outputDirName: String) {
             progress = ((currentFrames.toFloat() / totalFrames.toFloat() * 100).toInt()).coerceAtMost(100)
             print("\rProgress: $progress%")
             updateProgress(progress)  // เรียกใช้ updateProgress เพื่ออัปเดตความคืบหน้า
-            Thread.sleep(1000)
+            Thread.sleep(100)
         }
         println("\nProcessing complete.")
     }
