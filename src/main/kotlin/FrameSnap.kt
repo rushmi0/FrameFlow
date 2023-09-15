@@ -44,7 +44,7 @@ class FrameSnap(private val videoFileName: String, outputDirName: String) {
         File(outputDirectory).mkdirs()
 
         // สร้างคำสั่ง ffmpeg สำหรับแปลงวิดีโอเป็นรูปภาพ
-        val ffmpegCommand = "ffmpeg -i ${this.videoPath} -vf fps=${FPS} -threads $CPUthreads ${this.outputDirectory}/image_%05d.$fileExtension"
+        val ffmpegCommand = "ffmpeg -i ${this.videoPath} -vf fps=${FPS} -threads $CPUthreads ${this.outputDirectory}/Frame_%06d.$fileExtension"
 
         return try {
             // ประมาณจำนวนเฟรมทั้งหมด
