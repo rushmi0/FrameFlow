@@ -1,5 +1,5 @@
 fun main() {
-    // กำหนด ProgressListener
+    // กำหนด Progress Bar เพื่อแสดงผลความคืบหน้าในการแปลงวิดีโอเป็นรูปภาพ
     val progressListener = object : FrameSnap.ProgressListener {
         override fun onProgress(progress: Int) {
             print("\rProgress: $progress%")
