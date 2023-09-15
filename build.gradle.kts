@@ -12,9 +12,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+
     // https://mvnrepository.com/artifact/org.bytedeco/ffmpeg
     implementation("org.bytedeco:ffmpeg:5.0-1.5.7")
-
 }
 
 tasks.test {
